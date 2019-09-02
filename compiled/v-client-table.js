@@ -36,6 +36,9 @@ exports.install = function (Vue, globalOptions, useVuex) {
 
   var client = _merge2.default.recursive(true, (0, _table2.default)(), {
     name: 'client-table',
+    inject: {
+        $validator: '$validator'
+    },
     components: {
       Pagination: _vuePagination.Pagination
     },
